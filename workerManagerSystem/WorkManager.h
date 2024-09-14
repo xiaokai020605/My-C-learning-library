@@ -11,48 +11,48 @@ class WorkManager
 public:
 	WorkManager();
 
-	//²Ëµ¥Õ¹Ê¾
+	//èœå•å±•ç¤º
 	void Show_Menu();
-	//ÊµÏÖÍË³ö¹¦ÄÜ
+	//å®ç°é€€å‡ºåŠŸèƒ½
 	void exitSystem();
 
 	~WorkManager();
 
-	void Add_Emp();//Ìí¼ÓÖ°¹¤
+	void Add_Emp();//æ·»åŠ èŒå·¥
 
-	void save();//±£´æÎÄ¼ş
+	void save();//ä¿å­˜æ–‡ä»¶
 
-	int m_EmpNum;//¼ÇÂ¼ÎÄ¼şÖĞµÄÈËÊı¸öÊı
-	Worker** m_EmpArrary;//Ô±¹¤Êı×éÖ¸Õë
+	int m_EmpNum;//è®°å½•æ–‡ä»¶ä¸­çš„äººæ•°ä¸ªæ•°
+	Worker** m_EmpArrary;//å‘˜å·¥æ•°ç»„æŒ‡é’ˆ
 
-	//ÅĞ¶ÏÎÄ¼şÊÇ·ñÎª¿Õ
+	//åˆ¤æ–­æ–‡ä»¶æ˜¯å¦ä¸ºç©º
 	bool m_Fileempty;
 
-	//Í³¼ÆÎÄ¼şµ±ÖĞµÄÈËÊı
+	//ç»Ÿè®¡æ–‡ä»¶å½“ä¸­çš„äººæ•°
 	int get_EmpNum();
 
-	//³õÊ¼»¯Ô±¹¤
+	//åˆå§‹åŒ–å‘˜å·¥
 	void init_Emp();
 
-	//ÏÔÊ¾Ö°¹¤º¯Êı
+	//æ˜¾ç¤ºèŒå·¥å‡½æ•°
 	void show_Emp();
 
-	//É¾³ıÖ°¹¤º¯Êı
+	//åˆ é™¤èŒå·¥å‡½æ•°
 	void Del_Emp();
 
-	//ĞŞ¸ÄÖ°¹¤
+	//ä¿®æ”¹èŒå·¥
 	void Mod_Emp();
 
-	//²éÕÒÖ°¹¤
+	//æŸ¥æ‰¾èŒå·¥
 	void Find_Emp();
 
-	//ÅĞ¶ÏÖ°¹¤ÊÇ·ñ´æÔÚ
+	//åˆ¤æ–­èŒå·¥æ˜¯å¦å­˜åœ¨
 	int IsExist(int id);
 
-	//ÅÅĞòº¯Êı
+	//æ’åºå‡½æ•°
 	void Sort_Emp();
 
-	//Çå¿ÕÎÄ¼ş
+	//æ¸…ç©ºæ–‡ä»¶
 	void Clean_File();
 
 };
