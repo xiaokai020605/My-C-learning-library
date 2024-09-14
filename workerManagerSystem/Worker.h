@@ -2,56 +2,56 @@
 #include<iostream>
 using namespace std;
 
-//Ö°¹¤³éÏó»ùÀà
+//èŒå·¥æŠ½è±¡åŸºç±»
 class Worker
 {
 public:
-	//ÏÔÊ¾¸öÈËĞÅÏ¢
+	//æ˜¾ç¤ºä¸ªäººä¿¡æ¯
 	virtual void showInfo() = 0;
 
-	//»ñÈ¡¸ÚÎ»Ãû³Æ
+	//è·å–å²—ä½åç§°
 	virtual string getDeptName() = 0;
 
-	int m_Id=0;//Ö°¹¤±àºÅ
-	string m_name;//Ö°¹¤ĞÕÃû
-	int m_DepId=0;//ËùÔÚ¸ÚÎ»±àºÅ
+	int m_Id=0;//èŒå·¥ç¼–å·
+	string m_name;//èŒå·¥å§“å
+	int m_DepId=0;//æ‰€åœ¨å²—ä½ç¼–å·
 };
 
-//ÆÕÍ¨Ö°¹¤Àà
+//æ™®é€šèŒå·¥ç±»
 class Employee :public Worker
 {
 public:
-	//¹¹Ôìº¯Êı£¬³õÊ¼»¯±äÁ¿
+	//æ„é€ å‡½æ•°ï¼Œåˆå§‹åŒ–å˜é‡
 	Employee(int id, string name, int deid);
 
 
-	//ÖØĞ´¸¸Ààµ±ÖĞµÄ´¿Ğéº¯Êı
+	//é‡å†™çˆ¶ç±»å½“ä¸­çš„çº¯è™šå‡½æ•°
 	virtual void showInfo();
 	virtual string getDeptName() ;
 };
 
-//¾­ÀíÀà
+//ç»ç†ç±»
 class Manager :public Worker
 {
 public:
-	//¹¹Ôìº¯Êı£¬³õÊ¼»¯±äÁ¿
+	//æ„é€ å‡½æ•°ï¼Œåˆå§‹åŒ–å˜é‡
 	Manager(int id, string name, int deid);
 
 
-	//ÖØĞ´¸¸Ààµ±ÖĞµÄ´¿Ğéº¯Êı
+	//é‡å†™çˆ¶ç±»å½“ä¸­çš„çº¯è™šå‡½æ•°
 	virtual void showInfo();
 	virtual string getDeptName();
 };
 
-//ÀÏ°åÀà
+//è€æ¿ç±»
 class Boos :public Worker
 {
 public:
 
-	//¹¹Ôìº¯Êı£¬³õÊ¼»¯±äÁ¿
+	//æ„é€ å‡½æ•°ï¼Œåˆå§‹åŒ–å˜é‡
 	Boos(int id, string name, int deid);
 
-	//ÖØĞ´¸¸Ààµ±ÖĞµÄ´¿Ğéº¯Êı
+	//é‡å†™çˆ¶ç±»å½“ä¸­çš„çº¯è™šå‡½æ•°
 	virtual void showInfo();
 	virtual string getDeptName();
 };
